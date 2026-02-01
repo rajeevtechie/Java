@@ -17,7 +17,7 @@ public class calculator {
   public static void main(String[] args) {
     
     System.out.println(sum(2,5));
-    System.out.println(difference(2,5));
+    System.out.println(difference(2, 5));
     System.out.println(product(2,5));
     System.out.println(division(2,5));
   }
