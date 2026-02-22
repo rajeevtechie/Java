@@ -30,26 +30,26 @@ public class RockPaperScissorsGame {
         String[] choices = {"Rock", "Paper", "Scissors"};
         boolean playAgain = true;
 
-        System.out.println("🎮 Welcome to Rock, Paper, Scissors!");
+        System.out.println("Welcome to Rock, Paper, Scissors!");
 
         while (playAgain) {
 
             System.out.println("\nChoose an option:");
-            System.out.println("1. Rock ✊");
-            System.out.println("2. Paper 📄");
-            System.out.println("3. Scissors ✂️");
+            System.out.println("1. Rock");
+            System.out.println("2. Paper");
+            System.out.println("3. Scissors");
             System.out.println("4. Quit");
 
             System.out.print("Enter your choice (1-4): ");
             int userChoice = scanner.nextInt();
 
             if (userChoice == 4) {
-                System.out.println("👋 Thanks for playing!");
+                System.out.println("Thanks for playing!");
                 break;
             }
 
             if (userChoice < 1 || userChoice > 3) {
-                System.out.println("❌ Invalid choice! Try again.");
+                System.out.println("Invalid choice! Try again.");
                 continue;
             }
 
@@ -60,15 +60,15 @@ public class RockPaperScissorsGame {
 
             // Determine winner
             if (userChoice - 1 == computerChoice) {
-                System.out.println("🤝 It's a Tie!");
+                System.out.println("It's a Tie!");
             } 
             else if ((userChoice == 1 && computerChoice == 2) ||
                      (userChoice == 2 && computerChoice == 0) ||
                      (userChoice == 3 && computerChoice == 1)) {
-                System.out.println("💻 Computer Wins!");
+                System.out.println("Computer Wins!");
             } 
             else {
-                System.out.println("🎉 You Win!");
+                System.out.println("You Win!");
             }
         }
 
